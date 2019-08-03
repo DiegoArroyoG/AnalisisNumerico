@@ -6,7 +6,7 @@ def funcion(x):
 def derivada(x):
     return 3*((x-(9487/5000))*(x-(9487/5000)))
 
-def newton(E,x):
+def steffensen(E,x):
     err=math.inf
     con=0
     while(err>E):
@@ -16,4 +16,4 @@ def newton(E,x):
         x=nx
     return format(nx, ".10g"),con
 
-print(newton(0.001, 0.5))
+print(steffensen(0.001, 0.5))
