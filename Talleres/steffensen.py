@@ -11,7 +11,7 @@ def newton(E,x):
     con=0
     while(err>E):
         con=con+1
-        nx=x-((funcion(x)*funcion(x))/(funcion(x+funcion(x))-funcion(x)))
+        nx=x-((funcion(x)**(2))/(funcion(x+funcion(x))-funcion(x)))
         err=abs(nx-x)
         x=nx
     return format(nx, ".10g"),con
